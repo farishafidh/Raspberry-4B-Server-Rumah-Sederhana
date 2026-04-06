@@ -1,11 +1,11 @@
 # Raspberry 4B Server Rumah Sederhana
 
 ## Table of Contents
-- [Ringkasan](#-ringkasan)
-- [Fitur Utama](#-fitur-utama)
-- [Prasyarat](#-prasyarat)
-- [Konfigurasi](#️-konfigurasi)
-- [Instalasi](#️-instalasi)
+- [Ringkasan](#ringkasan)
+- [Fitur Utama](#fitur-utama)
+- [Prasyarat](#prasyarat)
+- [Konfigurasi](#konfigurasi)
+- [Instalasi](#instalasi)
   - [Menggunakan Instalasi Script](#menggunakan-instalasi-script)
   - [Tanpa Instalasi Script](#tanpa-instalasi-script)
     - [Update](#update)
@@ -21,13 +21,13 @@
     - [Konfigurasi Pi-Hole](#konfigurasi-pi-hole)
     - [Konfigurasi NGINX](#konfigurasi-nginx)
     - [Konfigurasi Jellyfin (khusus Raspberry Pi)](#konfigurasi-jellyfin-khusus-raspberry-pi)
-- [Pasca Instalasi](#-pasca-instalasi)
-- [Set-up Layanan](#️-set-up-layanan)
-- [Screenshot Server Rumah](#-screenshot-server-rumah)
+- [Pasca Instalasi](#pasca-instalasi)
+- [Set-up Layanan](#set-up-layanan)
+- [Screenshot Server Rumah](#screenshot-server-rumah)
 
 ---
 
-## 📜 Ringkasan
+## Ringkasan
 
 <img src=screenshot/home_server.jpg alt="Foto Home Server Raspberry Pi"/>
 <p align=center>Home Server Raspberry Pi (abaikan debu)</p><br>
@@ -38,7 +38,7 @@ Dibuat dengan ide awal ingin memungkinkan melakukan printing dokumen tanpa harus
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 - **File Server:** Memungkinkan untuk berbagi file di seluruh jaringan dan antar OS (Operating System) seperti Windows dan Linux. Menggunakan package Samba yang memanfaatkan protocol SMB (Simple Message Block)
 - **Printer Server:** Memungkinkan printing dokumen secara wireless. Menggunakan Docker App CUPS
 - **Media Server:** Memungkinkan menikmati media seperti film maupun serial seperti menggunakan Netflix. Menggunakan Docker App Jellyfin
@@ -48,7 +48,7 @@ Dibuat dengan ide awal ingin memungkinkan melakukan printing dokumen tanpa harus
 
 ---
 
-## 📋 Prasyarat
+## Prasyarat
 Skrip yang saya gunakan diterapkan pada hardware dan software di bawah ini:
 
 * **Perangkat Keras:**
@@ -67,7 +67,7 @@ Beberapa perangkat keras di atas seperti microSD card, SSD Shield, dan SSD exter
 
 ---
 
-## ⚙️ Konfigurasi
+## Konfigurasi
 Script ini dikhususkan untuk perangkat Raspberry Pi, khususnya perangkat yang menggunakan OS Raspbian, karena mengubah konfigurasi pada perangkat sesuai tabel di bawah ini,
 
 | Konfigurasi | Nilai Konfigurasi |
@@ -92,7 +92,7 @@ Untuk saat ini script belum saya mungkinkan untuk membaca input dari user untuk 
 
 ---
 
-## ▶️ Instalasi
+## Instalasi
 
 ### Menggunakan Instalasi Script
 
@@ -442,7 +442,7 @@ Instalasi Selesai
 
 ---
 
-## ✅ Pasca Instalasi
+## Pasca Instalasi
 
 Setelah instalasi di sisi Raspberry Pi atau perangkat server seelsai, langkah terakhir yang perlu dilakukan yaitu konfigurasi DNS di sisi perangkat user atau perangkat jaringan (wifi router/ONT). Konfigurasi DNS diperlukan di perangkat user atau jaringan supaya konfigurasi domain name terhadap layanan yang sudah dikonfigurasi tadi dapat berjalan.
 
@@ -462,13 +462,13 @@ Untuk instalasi server, konfigurasi DNS, dan kondisi jaringan rumah saya yang me
 
 ---
 
-## ⚙️ Set-up Layanan
+## Set-up Layanan
 
 Setelah semua instalasi dan pasca instalasi selesai, masih ada 1 tahap terakhir sebelum menikmati layanan printer server dan media server. Untuk set-up [Pi-Hole](#konfigurasi-pi-hole) dan [NGINX](#konfigurasi-nginx) sudah dijelaskan pada tahap instalasi tanpa script. Set-up Docker app CUPS, Jellyfin, dan Portainer akan dijelaskan di wiki [WIP]
 
 ---
 
-## 🏁 Akses Layanan
+## Akses Layanan
 
 Buka web browser pada perangkat dan ketik alamat web di bawah ini untuk mengakses masing-masing layanan,
 
@@ -483,7 +483,7 @@ Untuk instalasi tanpa script, bisa disesuaikan dengan domain name yang sudah dib
 
 ---
 
-## 📸 Screenshot Server Rumah
+## Screenshot Server Rumah
 
 <img src=screenshot/cups_printer_server.png alt="CUPS Printer Server Screenshot"/>
 <p align=center>CUPS Printer Server: Screenshot</p><br>
